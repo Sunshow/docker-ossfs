@@ -1,5 +1,5 @@
 FROM alpine:3.20 AS builder
-ENV OSSFS_VERSION 1.91.1
+ENV OSSFS_VERSION=1.91.1
 RUN apk --update add fuse alpine-sdk automake autoconf libxml2-dev fuse-dev curl-dev
 RUN wget -qO- https://github.com/aliyun/ossfs/archive/refs/tags/v${OSSFS_VERSION}.tar.gz |tar xz
 RUN cd ossfs-${OSSFS_VERSION} \
