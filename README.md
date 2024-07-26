@@ -1,6 +1,8 @@
 # docker-ossfs
 
-Docker Image for OSSFS based on Alpine Linux
+Docker Image for OSSFS based on Alpine Linux.
+
+This image **CANNOT** be used under macOS.
 
 ## Build
 
